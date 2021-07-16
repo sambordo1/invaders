@@ -1,0 +1,26 @@
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("3")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2,sse3,ssse3")
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-I" "minimp3/" "-Wall" "-Wextra" "-DMINIMP3_IMPLEMENTATION" "-o" "/Users/sbordo/ultimate_rust_crash_course/invaders/target/release/build/minimp3-sys-d5b35cb3651953fd/out/minimp3.o" "-c" "minimp3.c"
+exit code: 0
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/Users/sbordo/ultimate_rust_crash_course/invaders/target/release/build/minimp3-sys-d5b35cb3651953fd/out/libminimp3.a" "/Users/sbordo/ultimate_rust_crash_course/invaders/target/release/build/minimp3-sys-d5b35cb3651953fd/out/minimp3.o"
+exit code: 0
+running: "ar" "s" "/Users/sbordo/ultimate_rust_crash_course/invaders/target/release/build/minimp3-sys-d5b35cb3651953fd/out/libminimp3.a"
+exit code: 0
+cargo:rustc-link-lib=static=minimp3
+cargo:rustc-link-search=native=/Users/sbordo/ultimate_rust_crash_course/invaders/target/release/build/minimp3-sys-d5b35cb3651953fd/out

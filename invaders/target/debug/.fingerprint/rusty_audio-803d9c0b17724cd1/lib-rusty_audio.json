@@ -1,0 +1,1 @@
+{"rustc":3349208951852969630,"features":"[]","target":13245433951512792666,"profile":13719610756125836611,"path":3377670895572130691,"deps":[[1823719815769191551,"rodio",false,6958259004543839937]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/rusty_audio-803d9c0b17724cd1/dep-lib-rusty_audio"}}],"rustflags":[],"metadata":5548742544509383368,"config":0,"compile_kind":0}
